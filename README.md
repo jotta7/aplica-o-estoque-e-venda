@@ -1,9 +1,9 @@
 # Desafio Frexco 
-<h1 align="center">incompleto,  em desenvolvimento</h1>
+<h1 align="center">Incompleto,  em desenvolvimento</h1>
 
 <img src="./img/logofrexco.png" alt="logo frexco">
 
-<img src="./img/DesafioFrexco" alt="paginas da aplicacao" align="center">
+<img src="./img/DesafioFrexco.png" alt="paginas da aplicacao" align="center">
 
 # Sobre
 <h2>Frexco</h2>
