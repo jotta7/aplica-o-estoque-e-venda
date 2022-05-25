@@ -1,5 +1,6 @@
 # Desafio Frexco 
 <h1 align="center">Incompleto,  em desenvolvimento</h1>
+<h3 align="center">Login (usuário: admin | senha: frexco )</h3>
 
 <img src="./img/logofrexco.png" alt="logo frexco">
 
