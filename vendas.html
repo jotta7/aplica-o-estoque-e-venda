@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vendas</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptV.js" defer></script>
+</head>
+<body>
+    <h1 class="logo"><img src="https://frexco.com.br/wp-content/uploads/2020/04/logo-frexco-slogan.png" alt="logo Frexco"></h1>
+    <div class="container">
+        
+        <header class="cabecalho">
+            <h2>Menu</h2>
+            <nav class="menu">
+                <ul>
+                    <li><a href="navegacao.html">Navegação</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                    <li><a href="movimento.html">Movimento</a></li>
+                    <li><a href="detalhes.html">Detalhes</a></li>
+                </ul>
+                <ul class="sair">
+                    <li><a href="index.html"><img src="https://cdn-icons-png.flaticon.com/128/1373/1373573.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="principal">
+            <h2 class="titulos">Frente de Caixa</h2>
+            
+            <div class="carrinho">
+                <form action="" id="incluirVenda" >
+                    <label for="incluir-produto">Incluir produto</label>
+                    <input type="search" id="recebe-produto" class="input-padrao" required>  
+                    <input type="submit" value="Incluir" class="submits" onclick="incluir()">
+                </form>
+            
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Valor</th>
+                            <th>Editar Qt.</th>    
+                            <th>Deletar</th>
+
+    
+                        </tr>
+                    </thead>
+                    <tbody id="product-venda">
+                        <tr>
+                        <!--<td>Arroz 5kg</td>
+                            <td>5</td>
+                            <td>R$8,00</td>
+                            <td><button>+</button><button>-</button></td>
+                            <td><button>Del</button></td>-->
+                            
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td id="reslist"></td>
+                        </tr>
+                        
+                    </tbody>
+
+                </table> 
+
+                <input type="submit" class="submits" value="Finalizar Venda" onclick="finalizar()">
+                <input type="submit" class="submits" value="Cancelar venda" onclick="cancelar">   
+            </div>
+        </main>
+    </div>
+</body>
+</html>

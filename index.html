@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Frexco</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: url(https://images.pexels.com/photos/39860/nature-leaf-detail-drops-39860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-size: 100vw;      
+        }
+        h1 img{
+            max-width: 250px;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 18%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            color:  #88bc23;
+        }
+        input{
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            margin:8% auto;
+        }
+        #submit{
+            width: 60%;
+            background: transparent;
+            color:  #88bc23;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 15px;
+            margin: 8% 20%;
+            cursor: pointer;
+        }    
+        
+        #submit:hover{
+            background: linear-gradient(180deg, transparent, #88bc23);
+            color: white;
+            border-radius: 20px;
+            box-shadow: 
+            0 0 5px  #88bc23,
+            0 0 25px  #88bc23,
+            0 0 50px  #88bc23,
+            0 0 100px  #88bc23;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="" method="post" >
+            <h1><img src="https://frexco.com.br/wp-content/uploads/2020/04/logo-frexco-slogan.png" alt="logo Frexco"></h1>
+          
+            <input type="text" class="login" placeholder="login"  id="login">
+          
+            <input type="password" class="senha" placeholder="senha" id="senha">
+         
+            <input type="submit" name="submit" id="submit" value="Entrar" onclick="logar(); return false" >
+        </form>
+    </div>
+    
+    <script>
+        function logar(){
+            let login = document.getElementById('login').value
+            let senha = document.getElementById('senha').value
+
+            if(login == "admin" && senha == "frexco"){
+                alert('login efetuado com sucesso')
+                location.href = "navegacao.html"
+            }else{
+                alert('Usuario ou senha incorretos')
+            }
+        }    
+    </script>
+</body>
+</html>

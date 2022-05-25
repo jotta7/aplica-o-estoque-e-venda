@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="logo"><img src="https://frexco.com.br/wp-content/uploads/2020/04/logo-frexco-slogan.png" alt="logo Frexco"></h1>
+    <div class="container">
+        
+        <header class="cabecalho">
+            <h2>Menu</h2>
+            <nav class="menu">
+                <ul>
+                    <li><a href="navegacao.html">Navegação</a></li>
+                    <li><a href="vendas.html">vendas</a></li>
+                    <li><a href="movimento.html">Movimento</a></li>
+                    <li><a href="detalhes.html">Detalhes</a></li>
+                </ul>
+                <ul class="sair">
+                    <li><a href="index.html"><img src="https://cdn-icons-png.flaticon.com/128/1373/1373573.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="principal">
+            <h2 class="titulos">Cadastro de Produtos</h2>
+            <form action="" id="product-form">
+                <label for="nome-produto">Nome do Produto</label>
+                <input type="text" id="nomeProduto" class="input-padrao" required>
+
+                <label for="preco">Preço</label>
+                <input type="text" id="preco" class="input-padrao" required>
+
+                <label for="preco-venda">Preço de venda</label>
+                <input type="text" id="precoVenda" class="input-padrao" required>
+
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="quantidade" class="input-padrao" required>
+
+                <label for="vencimento">Data de vencimento</label>
+                <input type="date" id="vencimento" class="input-padrao" required>
+
+                <input type="submit" value="Cadastrar" class="submits" onclick="" >
+            </form>
+
+                <h2 class="titulos">Lista de Produtos</h2>
+            <form action="product">    
+                <input type="search" class="input-padrao">
+                <input type="submit" value="Pesquisar" class="submits">
+            </form>    
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Preço de venda</th>
+                        <th>Quantidade</th>
+                        <th>Data de vencimento</th>
+                        <th>ação</th>
+
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                    <!--<tr class="card-body">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button></button></td>
+                    </tr>-->
+                    
+                </tbody>
+                
+            </table>
+        </main>
+    </div>
+</body>
+</html>
+

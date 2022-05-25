@@ -1,0 +1,148 @@
+body{
+    background: #f4f4f4;
+    font-family:sans-serif;     
+}
+.logo img{
+    margin: 20px 30px;
+    width: 15%;
+    
+}
+.container{
+    display: flex;
+}
+.cabecalho{
+    vertical-align: bottom;
+    background: #88bc23;
+    box-shadow: 4px 4px 4px #444444;
+    width:15%;
+    height: 70vh;
+    padding: 40px;
+    flex-basis: 20%;
+    color: #ffffff;
+}
+.cabecalho h2{
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.menu li{
+    margin:10px 0;
+}
+.menu li:hover{
+    transform: scale(1.1);
+}
+.menu a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+.sair{
+    margin-top: 40vh;
+    
+}
+.sair img{
+    width:40px;
+}
+.principal{
+    margin: 0 10%;
+    flex-basis: 80%;
+}
+.navegacaoPrincipal{
+    display:flex;
+    max-width: 600px;
+
+}
+.primeiroAcesso div, .segundoAcesso div {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #444444;
+    padding:20px;
+    margin: 30px 15px;
+    background: #88bc23;
+    color:#ffffff;
+    
+}
+.primeiroAcesso div:hover, .segundoAcesso div:hover{
+    box-shadow: none;
+    opacity: 0.95;
+}
+.primeiroAcesso a, .segundoAcesso a{
+    text-decoration: none;
+}
+.navBlocos{
+    display: flex;
+}
+.navBlocos h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navBlocos img{
+    max-width: 100px;
+    max-height:100px; ;
+    margin-left:60px;
+}
+/*CADASTRO DE PRODUTOS*/
+.titulos{
+    color: #88bc23;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 30px 0;
+}
+label{
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.input-padrao{
+    display: block;
+    padding: 8px 40px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+.submits{
+    margin: 30px 0;
+    background: #88bc23;
+    padding:10px 40px;
+    border-radius:25px;
+    cursor: pointer;
+    border: none;
+    transition:0.5s;
+}
+.submits:hover{
+    color:#88bc23;
+    background:#f4f4f4;
+}
+/*tabela*/
+table{
+    margin-bottom: 100px;
+}
+th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    background: #88bc23;
+    color:#ffffff;
+    font-weight: bold;
+}
+td{
+    border: 1px solid #000000;
+    padding: 8px 15px;    
+}
+td img{
+    width: 25px;
+}
+tr{
+    background: #888888;
+    transition: 1s;
+}
+tr:hover{
+    background: #f4f4f4;
+}
+
+/*VENDAS*/
+.carrinho{
+    padding: 20px;
+    border-radius:10px;
+    background: rgba(0,0,0,0.2);
+    max-width: 500px;
+}
